@@ -1,5 +1,7 @@
-## AstroFi 🌌
-- A decentralized finance platform powered by Stellar for seamless, secure, and scalable financial solutions in space mission and research.
+## AstroFi : Decentralized CrowdFunding Platform for Space Research
+- A decentralized finance platform powered by Stellar for seamless, secure, and scalable financial solutions for funding space mission and research programs.
+  
+![a1-cool](https://github.com/user-attachments/assets/d2476bbc-9572-4bd1-9f8b-fe080717182a)
 
 
 ## About Me 
