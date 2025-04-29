@@ -1,14 +1,14 @@
-AstroFi 🌌
-A decentralized finance platform powered by Stellar for seamless, secure, and scalable financial solutions in space mission and research.
+## AstroFi 🌌
+- A decentralized finance platform powered by Stellar for seamless, secure, and scalable financial solutions in space mission and research.
 
 
-About Me 
-Hi, I'm Neha Kumari, a passionate blockchain developer with a mission to democratize finance through decentralized technologies. With learning experience in Stellar, smart contracts, and full-stack development, I created AstroFi to empower the scientific community with secure, transparent, and accessible financial tools. Through this project, I  aim to 
+## About Me 
+Hi, I'm Neha Kumari, a passionate blockchain developer with a mission to democratize finance through decentralized technologies. With learning experience in Stellar, smart contracts, and full-stack development, I created AstroFi to empower the scientific community with secure, transparent, and accessible financial tools. Through this project, I  aim to deliver a robust solution for the space community and research programs to get easily funded and the investors can even be rewarded with `MissionNFT` badge to showcase their contributions -- promoting win-win situation for both parties involved.
 
-What is AstroFi?
+## What is AstroFi?
 AstroFi is a decentralized finance (DeFi) platform built on the Stellar blockchain, designed to provide fast, low-cost, and secure financial services. By leveraging Stellar’s robust network and custom smart contracts (via Soroban), AstroFi enables users to lend, stake, and transfer assets globally with minimal fees.
 
-Key Features 
+## Key Features 
 
 Cross-Border Payments: Send and receive payments instantly using Stellar’s native assets.
 Decentralized Lending: Borrow and lend assets securely with smart contract automation.
@@ -18,20 +18,20 @@ Interoperability: Seamlessly integrate with other Stellar-based protocols.
 Secure and Transparent: All transactions are recorded on the Stellar ledger.
 
 
-Demo 🎥
+## Demo 🎥
 Watch AstroFi in action! Check out our demo video to see how easy it is to send payments, surf dashboard, and manage your rewarded NFTs.
 
 Screenshots 📸
 
 
-Dashboard
+### Dashboard
 Staking Interface
 
 
 
 
 
-Getting Started Locally 🛠️
+## Getting Started Locally 🛠️
 Follow these steps to set up AstroFi on your local machine.
 
 ## Prerequisites
