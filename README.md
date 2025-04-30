@@ -69,88 +69,72 @@ AstroFi is a decentralized finance (DeFi) platform built on the Stellar blockcha
 ## Demo 🎥
 Watch AstroFi in action! Check out our demo video to see how easy it is to send payments, surf dashboard, and manage your rewarded NFTs.
 
-Screenshots 📸
-
-
-### Dashboard
-Staking Interface
-
-
-
+- [SmartContract Deployment video via Stella CLI](https://www.loom.com/share/4a5ee00c83e64acba8a4eaeb88137add)
 
 
 ## Getting Started Locally 🛠️
 Follow these steps to set up AstroFi on your local machine.
 
-## Prerequisites
+### Prerequisites
 
-Node.js (v20 or higher)
-Stellar SDK (stellar-sdk for JavaScript)
+- Node.js (v20 or higher)
+- Stellar SDK (stellar-sdk for JavaScript)
 
-Installation
+### Installation
 
-Clone the Repository:git clone https://github.com/yourusername/astrofi.git
-cd astrofi
-
-Install Dependencies:npm install
-
-Run the Application:npm run dev
-Access the App:Open http://localhost:3000 in your browser.
+- Clone the Repository:git clone https://github.com/yourusername/astrofi.git
+- cd astrofi
+- Install Dependencies:npm install
+- Run the Application:npm run dev
+- Access the App:Open http://localhost:3000 in your browser.
 
 
-Solutions Embedded 🧩
+## Solutions Embedded 🧩
 AstroFi integrates several innovative solutions to enhance user experience and functionality:
 
-Real-Time Transaction Monitoring: Track transactions on the Stellar network with live updates.
-Multi-Signature Wallets: Enhance security with multi-sig accounts for enterprise users.
-AI-Powered Insights: Use integrated analytics to optimize lending and staking strategies.
-Custom Asset Issuance: Create and manage tokenized assets on Stellar.
+- Invest in space missions and reserach programs
+- Real-Time Transaction Monitoring: Track transactions on the Stellar network with live updates.
+- Multi-Signature Wallets: Enhance security with multi-sig accounts for enterprise users.
+- AI-Powered Insights: Use integrated analytics to optimize lending and staking strategies.(coming soon)
 
 
 Smart Contracts 📜
 - `Contract Address: CDNYQW733S7TLMUOCB7NKMMAQAT42FCC6ZS3JMVYZJTR54M44OFSR3ZR `
 
-- Demo video of deploying smart contract
-
-https://www.loom.com/share/4a5ee00c83e64acba8a4eaeb88137add?sid=0c654271-a26f-4202-9b1c-a61ca7472349
-
-## AstroFi uses Soroban, Stellar’s smart contract platform, to automate financial operations. 
-
-<h3>Key smart contracts include:</h3>
+## AstroFi uses Soroban, Stellar’s smart contract platform, to automate financial operations. Key smart contracts include:
 
 ## Stellar Integration 🌍
 AstroFi is deeply integrated with the Stellar blockchain, leveraging its features for:
 
-Fast Transactions: Sub-second transaction finality with fees as low as 0.00001 XLM.
-Native Assets: Support for XLM and custom tokens issued on Stellar.
-Decentralized Exchange (SDEX): Trade assets directly on Stellar’s built-in DEX.
-Horizon API: Interact with the Stellar network via the Horizon API for account management and transaction submission.
+- Fast Transactions: Sub-second transaction finality with fees as low as 0.00001 XLM.
+- Native Assets: Support for XLM and custom tokens issued on Stellar.
+- Decentralized Exchange (SDEX): Trade assets directly on Stellar’s built-in DEX.
+- Horizon API: Interact with the Stellar network via the Horizon API for account management and transaction submission.
 
 
-Potential Use Cases 💡
-AstroFi can be applied in various scenarios, including:
+## Potential Use Cases 💡
+- AstroFi can be applied in various scenarios, including:
 
-Financial Inclusion: Provide banking services to unbanked populations using Stellar’s low-cost infrastructure.
-Remittances: Enable cheap, instant cross-border payments for migrant workers.
-Tokenized Assets: Issue and trade real-world assets (e.g., real estate, commodities) on Stellar.
-Decentralized Crowdfunding: Raise funds securely with smart contract-based escrow.
-Microfinance: Offer small loans to entrepreneurs in developing regions.
+- Financial Inclusion: Provide banking services to unbanked populations using Stellar’s low-cost infrastructure.
+- Remittances: Enable cheap, instant cross-border payments for migrant workers.
+- Tokenized Assets: Issue and trade real-world assets (e.g., real estate, commodities) on Stellar.
+- Decentralized Crowdfunding: Raise funds securely with smart contract-based escrow.
+- Microfinance: Offer small loans to entrepreneurs in developing regions.
 
 
-Contributing 🤝
-We welcome contributions from the community! To get started:
+## Contributing 🤝
+- contributions are welcomed wholeheartedly. To get started:
 
-Fork the repository.
-Create a new branch (git checkout -b feature/your-feature).
-Commit your changes (git commit -m "Add your feature").
-Push to the branch (git push origin feature/your-feature).
-Open a Pull Request.
+- Fork the repository.
+- Create a new branch (git checkout -b feature/your-feature).
+- start the server `npm install` then `npm run dev` 
+- Make the desired changes
+- Commit your changes (git commit -m "Add your feature").
+- Push to the branch (git push origin feature/your-feature).
+- Open a Pull Request.
 
 
 ## Community 🌐
-Join our community to stay updated:
-
-🐦 Twitter: https://x.com/nehakumarisde
-📖 Documentation: https://docs.google.com/document/d/1Uh75iQdImAMI1BNcoXbz31P-S3b9esgyVZdeb6Sxwec/edit?usp=sharing
-
-
+ Join our community to stay updated:
+ 
+- Twitter: https://x.com/nehakumarisde
