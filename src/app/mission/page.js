@@ -3,10 +3,21 @@
 import React, { useEffect, useState } from 'react';
 import MissionCard from '@/app/components/MissionCard';
 import { toast } from 'react-toastify';
+import Link from 'next/link';
 
 const MissionCatalog = () => {
   const [missionList, setMissionList] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const startServer = async () => {
+    await fetch("/api/db", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+  };
+  
 
   const fetchMission = async () => {
     try {
@@ -18,11 +29,17 @@ const MissionCatalog = () => {
       });
       const data = await response.json();
 
-      if (!data || data.length === 0) {
-        toast.error("No missions found");
-      } else {
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to fetch missions');
+      }
+  
+      if (Array.isArray(data) && data.length === 0) {
+        toast.info('No missions found');
+      } else if (Array.isArray(data)) {
         setMissionList(data);
-        toast.success("Mission details fetched successfully");
+        toast.success('Mission details fetched successfully');
+      } else {
+        console.log('Unexpected response format');
       }
     } catch (error) {
       console.log(error.message);
@@ -33,7 +50,13 @@ const MissionCatalog = () => {
   };
 
   useEffect(() => {
-    fetchMission();
+    startServer().then(() => {
+      console.log("Server started successfully");
+      fetchMission();
+    }).catch((error) => { 
+      console.error("Error starting server:", error.message);
+    })
+    
   }, []);
 
   return (
@@ -49,7 +72,9 @@ const MissionCatalog = () => {
       ) : missionList.length > 0 ? (
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {missionList.map((mission, index) => (
+            <Link href={`/mission/${mission._id}`} key={index}>
             <MissionCard key={index} mission={mission} />
+            </Link>
           ))}
         </div>
       ) : (

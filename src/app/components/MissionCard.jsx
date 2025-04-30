@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function MissionCard({ mission }) {
   return (
     <div className="card bg-white border border-green-500 mb-6 mt-4 rounded-lg shadow-lg overflow-hidden">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="col-span-1">
           <img
             className="w-full h-auto rounded-l-lg object-cover"
@@ -15,11 +15,11 @@ export default function MissionCard({ mission }) {
         <div className="col-span-3">
           <div className="card-header bg-emerald-600 text-white p-4">
             <h5 className="text-lg font-bold">
-              {mission.title}
+              {mission.title} <br/>
               <span
                 className={`ml-4 px-3 py-1 rounded-full text-sm font-medium `}
               >
-                {mission.walletAddress}
+                CreatorID: {mission.creator || "@Unknown"}
               </span>
             </h5>
           </div>
@@ -47,8 +47,8 @@ export default function MissionCard({ mission }) {
             </p>
           </div>
 
-          <div className="card-footer bg-transparent border-t border-green-500 p-4 text-gray-700">
-            {mission.creator || "@Unknown"}
+          <div className="card-footer bg-transparent border-t border-green-500 p-4 mx-4 text-gray-700">
+            Wallet: {mission.walletAddress}
           </div>
         </div>
       </div>

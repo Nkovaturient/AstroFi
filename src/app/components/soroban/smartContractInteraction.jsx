@@ -1,28 +1,37 @@
-"use client";
-
 import {
   Contract,
-  SorobanRpc,
+  rpc,
   nativeToScVal,
   Address,
   xdr,
   BASE_FEE,
   scValToNative,
   Networks,
+  TransactionBuilder,
+
 } from "@stellar/stellar-sdk";
 import { userSignTransaction } from "./freighter";
-import { WalletContext } from "../../../walletContext/WalletConnect.jsx"; 
+import { WalletContext } from "../../../walletContext/WalletConnect.jsx";
 import { useContext } from "react";
+import { useParams } from "next/navigation";
 
 const RPC_URL = "https://soroban-testnet.stellar.org";
 const NETWORK_PASSPHRASE = Networks.TESTNET;
 const contractId = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS;
 
-const server = new SorobanRpc.Server(RPC_URL, { allowHttp: true });
-const contract = new Contract(contractId);
 
-export const useSmartContract = () => {
+export const useSmartContract = async () => {
   const { walletAddress } = useContext(WalletContext);
+  const server = new rpc.Server(RPC_URL, { allowHttp: true });
+  const sourceAccount = await server.getAccount(walletAddress);
+  const contract = new Contract(contractId);
+  // let params= useParams()
+  // let buildTx;
+
+  // buildTx = new TransactionBuilder(sourceAccount, params)
+  //   .addOperation(contract.call(functName))
+  //   .setTimeout(30)
+  //   .build();
 
   const simulateAndSend = async (tx) => {
     try {

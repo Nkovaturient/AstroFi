@@ -64,7 +64,13 @@ Custom Asset Issuance: Create and manage tokenized assets on Stellar.
 Smart Contracts 📜
 - `Contract Address: CDNYQW733S7TLMUOCB7NKMMAQAT42FCC6ZS3JMVYZJTR54M44OFSR3ZR `
 
-## AstroFi uses Soroban, Stellar’s smart contract platform, to automate financial operations. Key smart contracts include:
+- Demo video of deploying smart contract
+
+https://www.loom.com/share/4a5ee00c83e64acba8a4eaeb88137add?sid=0c654271-a26f-4202-9b1c-a61ca7472349
+
+## AstroFi uses Soroban, Stellar’s smart contract platform, to automate financial operations. 
+
+<h3>Key smart contracts include:</h3>
 
 ## Stellar Integration 🌍
 AstroFi is deeply integrated with the Stellar blockchain, leveraging its features for:
