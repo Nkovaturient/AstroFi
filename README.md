@@ -1,5 +1,8 @@
 ## AstroFi : Decentralized CrowdFunding Platform for Space Research
 - A decentralized finance platform powered by Stellar for seamless, secure, and scalable financial solutions for funding space mission and research programs.
+- [Technical Doc](https://docs.google.com/document/d/1Uh75iQdImAMI1BNcoXbz31P-S3b9esgyVZdeb6Sxwec/edit?usp=sharing)
+- [Pitch Deck](https://www.canva.com/design/DAGmB2pQ1aA/fS_3W4aPx8x3uGxOUrjKXg/view?utm_content=DAGmB2pQ1aA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h027ce33324)
+
   
 ![a1-cool](https://github.com/user-attachments/assets/d2476bbc-9572-4bd1-9f8b-fe080717182a)
 
@@ -9,15 +12,58 @@ Hi, I'm Neha Kumari, a passionate blockchain developer with a mission to democra
 
 ## What is AstroFi?
 AstroFi is a decentralized finance (DeFi) platform built on the Stellar blockchain, designed to provide fast, low-cost, and secure financial services. By leveraging Stellar’s robust network and custom smart contracts (via Soroban), AstroFi enables users to lend, stake, and transfer assets globally with minimal fees.
+![Screenshot (576)](https://github.com/user-attachments/assets/22720d9b-08a9-4cbc-bf25-8ee596e542e1)
 
-## Key Features 
+![Screenshot (577)](https://github.com/user-attachments/assets/4efbe7be-6818-4f9d-9b36-3a492caa05c1)
 
-Cross-Border Payments: Send and receive payments instantly using Stellar’s native assets.
-Decentralized Lending: Borrow and lend assets securely with smart contract automation.
-Staking Rewards: Stake AstroFi tokens to earn passive income.
-User-Friendly Interface: Intuitive UI for beginners and advanced users alike.
-Interoperability: Seamlessly integrate with other Stellar-based protocols.
-Secure and Transparent: All transactions are recorded on the Stellar ledger.
+## ## FRONTEND (Next.js) Flow
+
+1. **User lands** →
+    
+    Fetch & display **missions/projects** dynamically (title, desc, goal fund, associated orgs, uploadables).
+    
+2. **Connect Wallet**
+
+    - Via Freighter extension (`WalletProvider` already setup ✅).
+3. **User clicks Fund** on any Mission →
+    - Input: amount to donate (in XLM).
+4. **On Payment Proceed**:
+    - Initiate `fund_program()` Smart Contract function call using Stellar SDK + Soroban SDK.
+    - Once payment is confirmed:
+        - Call `mintNft()` Smart Contract function to mint **Mission NFT** (metadata = wallet address + missionID + contribution).
+5. **Show NFT Rewards page** — user's NFT minted records.
+
+---
+
+## 🔹 SMART CONTRACTS on Soroban
+-  2 major contracts:
+
+| Contract | Purpose |
+| --- | --- |
+| **MissionFundContract** | Manages program funding (`fund_program()`, `calc_remaining_fund()`) |
+| **MissionNftContract** | Handles reward NFT minting (`mintNft()`) |
+
+# **AstroFi Smart Contracts (Soroban)**
+
+1. **FundMission Contract**
+    - Accept funding deposits
+    - call nftMint() contract and assign `Mission {Title} Nft` reward to users on complete funding
+    - track the remaining project funding `Remaining`:  to calculate how much funding for the project is still needed after a contributor donates.
+    - `let remaining_fund = mission.amount - funding_amount`
+    
+     
+    
+2. **NFTMint Contract**
+    - Mint NFT badges when user donates
+    - Link NFT to Mission ID & User Address
+    - nft metadata structure :
+    
+    `{
+    "description": Mission Description,
+    "image": `MissionImg` or` [NFT Mission Image](https://www.freepik.com/free-ai-image/international-day-education-futuristic-style_94953586.htm#fromView=search&page=1&position=21&uuid=78ee3014-9b0b-47b1-802c-2405ffc5775d&query=astronomy+research)`,
+    "name": MissionTitle,
+    "attributes": [contributor's wallet address, MissionID ]
+    }`
 
 
 ## Demo 🎥
