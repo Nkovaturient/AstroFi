@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useContext, useEffect, useState } from 'react'
 import './upload.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -76,7 +78,7 @@ const ProjectUploadForm = () => {
 
   return (
     <div className='add'>
-      <h3>Upload your Archive in your Astrophile Yard <FontAwesomeIcon icon={faImages} /></h3>
+      <h3>Upload Space Research Program <FontAwesomeIcon icon={faImages} /></h3>
       <p>All Fields are mandatory.(*)</p> <br />
       <form className='flex-col' onSubmit={handleOnSubmit}  >
         <div className="add-image-upload flex-col">
@@ -110,7 +112,7 @@ const ProjectUploadForm = () => {
         <div className="add-product-description flex-col">
           <p>Facts</p>
           <textarea onChange={handleOnChange} value={data.facts}
-            name="facts" rows='6' placeholder='mention an astonishing fact about your archive..' required></textarea>
+            name="facts" rows='6' placeholder='mention a relevant program content' required></textarea>
         </div>
 
         <button className='add-btn' type='submit' disabled={ loading? true : false}>Upload <FontAwesomeIcon icon={faSpaceShuttle} /></button>
