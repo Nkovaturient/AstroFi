@@ -14,9 +14,9 @@ export default function Navbar() {
         <Link href="/" className="text-white hover:text-neonPurple transition">
           Home
         </Link>
-        <Link href="/rewards" className="text-white hover:text-neonPurple transition">
+        {/* <Link href="/rewards" className="text-white hover:text-neonPurple transition">
           Rewards
-        </Link>
+        </Link> */}
         <Link href="/mission" className="text-white hover:text-neonPurple transition">
           Space Missions
         </Link>
