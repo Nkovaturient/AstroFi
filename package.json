@@ -13,6 +13,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@stellar/freighter-api": "^4.1.0",
     "@stellar/stellar-sdk": "^13.3.0",
+    "@vercel/analytics": "^1.5.0",
     "bignumber.js": "^9.3.0",
     "mongodb": "^6.16.0",
     "mongoose": "^8.14.0",
