@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react'
 
-const page = () => {
+const FundTransfer = () => {
     const getFundStatus= async()=>{
         try{
           const response = await fetch('/api/fund', {
@@ -21,8 +21,8 @@ const page = () => {
   },[])
 
   return (
-    <div>page</div>
+    <div>FundTransfer</div>
   )
 }
 
-export default page
+export default FundTransfer
