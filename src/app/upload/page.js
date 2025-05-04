@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './upload.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faImages, faSpaceShuttle } from '@fortawesome/free-solid-svg-icons'
 import { toast } from 'react-toastify'
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
+import { useRouter } from 'next/navigation';
 
 const ProjectUploadForm = () => {
   const assets={
@@ -26,7 +26,7 @@ const ProjectUploadForm = () => {
     image:'',
     facts: '',
   })
-  const navigate = useNavigate();
+  const navigate = useRouter();
 
 
   const handleOnChange = (event) => {
@@ -61,7 +61,7 @@ const ProjectUploadForm = () => {
           autoClose: 5000,
           theme: "colored",
         })
-        navigate('/');
+        navigate.push('/');
 
       }
 
