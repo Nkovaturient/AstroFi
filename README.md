@@ -36,7 +36,9 @@ AstroFi is a decentralized finance (DeFi) platform built on the Stellar blockcha
 ---
 
 ## 🔹 SMART CONTRACTS on Soroban
--  2 major contracts:
+
+-  Smart Contracts 📜
+- `Contract Address: CDNYQW733S7TLMUOCB7NKMMAQAT42FCC6ZS3JMVYZJTR54M44OFSR3ZR `
 
 | Contract | Purpose |
 | --- | --- |
@@ -51,7 +53,6 @@ AstroFi is a decentralized finance (DeFi) platform built on the Stellar blockcha
     - track the remaining project funding `Remaining`:  to calculate how much funding for the project is still needed after a contributor donates.
     - `let remaining_fund = mission.amount - funding_amount`
     
-     
     
 2. **NFTMint Contract**
     - Mint NFT badges when user donates
@@ -98,9 +99,6 @@ AstroFi integrates several innovative solutions to enhance user experience and f
 - AI-Powered Insights: Use integrated analytics to optimize lending and staking strategies.(coming soon)
 
 
-Smart Contracts 📜
-- `Contract Address: CDNYQW733S7TLMUOCB7NKMMAQAT42FCC6ZS3JMVYZJTR54M44OFSR3ZR `
-
 ## AstroFi uses Soroban, Stellar’s smart contract platform, to automate financial operations. Key smart contracts include:
 
 ## Stellar Integration 🌍
@@ -123,7 +121,7 @@ AstroFi is deeply integrated with the Stellar blockchain, leveraging its feature
 
 
 ## Contributing 🤝
-- contributions are welcomed wholeheartedly. To get started:
+- Contributions are welcomed wholeheartedly. To get started:
 
 - Fork the repository.
 - Create a new branch (git checkout -b feature/your-feature).
@@ -137,4 +135,4 @@ AstroFi is deeply integrated with the Stellar blockchain, leveraging its feature
 ## Community 🌐
  Join our community to stay updated:
  
-- Twitter: https://x.com/nehakumarisde
+- Twitter: https://x.com/astro_Fi_
