@@ -1,3 +1,3 @@
 export const config={
-    DB_URI: process.env.NEXT_PUBLIC_DB_URI
+    DB_URI: "mongodb+srv://unholy:RbSTAiOBq6vWr1aA@unholy.g4oq3yv.mongodb.net/?retryWrites=true&w=majority&appName=Unholy"
 }
