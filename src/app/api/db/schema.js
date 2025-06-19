@@ -35,6 +35,6 @@ missionSchema.pre('save', function (next) {
   next();
 });
 
-const Mission = mongoose.model('Mission', missionSchema);
-const Milestone = mongoose.model('Milestone', milestoneSchema);
+const Mission = mongoose.models.Mission || mongoose.model('Mission', missionSchema);
+const Milestone = mongoose.models.Milestone || mongoose.model('Milestone', milestoneSchema);
 module.exports = {Mission, Milestone}
