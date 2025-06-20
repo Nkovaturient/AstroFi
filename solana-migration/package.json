@@ -1,0 +1,42 @@
+{
+  "name": "astrofi-solana-migration",
+  "version": "2.0.0",
+  "description": "AstroFi Solana Migration - Complete DeFi Space Research Platform",
+  "scripts": {
+    "build-programs": "anchor build",
+    "test-programs": "anchor test",
+    "deploy-programs": "anchor deploy",
+    "start-validator": "solana-test-validator",
+    "dev-frontend": "cd frontend && npm run dev",
+    "build-frontend": "cd frontend && npm run build",
+    "setup": "npm run install-deps && npm run build-programs",
+    "install-deps": "npm install && cd frontend && npm install"
+  },
+  "keywords": [
+    "solana",
+    "defi",
+    "space-research",
+    "crowdfunding",
+    "blockchain",
+    "anchor",
+    "rust"
+  ],
+  "author": "AstroFi Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@coral-xyz/anchor": "^0.29.0",
+    "@solana/web3.js": "^1.87.6",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@solana/spl-token": "^0.3.9",
+    "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-adapter-react": "^0.15.35",
+    "@solana/wallet-adapter-wallets": "^0.19.32"
+  },
+  "workspaces": [
+    "frontend",
+    "programs/*"
+  ]
+}
